@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <div class="container">
+                <span class="navbar-brand h1 mb-0 w-100 text-center">Weather Dashboard</span>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row ml-2">
+
+            <div class="col-3 bg-light">
+                
+                <p class="font-weight-bold my-2"> Search City : </p>
+                
+                <form class="input-group mb-3">
+                    
+                    <input type="text" id="searchcity" class="form-control"  placeholder="Enter city name">
+                    
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary rounded" id="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                </form>
+                <br>
+                <div class="card">
+                    <ul class="list-group list-group-flush" id="historylist">
+
+                    </ul>
+                </div>
+            </div>
+    <div class="col-9">
+        <div class ="row">
+            <div class="col-12">
+                <div class=" card mr-2 mt-3" id="city-card">
+                    <h2 class="card-title text-info " id="city-name"></h2>
+                    <div class="card-text">
+
+                        <p id="temperature">temp</p>
+                        <p id="humidity">hum</p>
+                        <p id="windspeed"></p>
+                        <p id="uvindex"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </main>    
+</body>
+</html>
