@@ -60,6 +60,7 @@ function searchCurrentWeather(city) {
         }
         else {
             $("#city-name").text("Please enter a valid city name:-" + city).append(imageIcon);
+            
         }
     });
 

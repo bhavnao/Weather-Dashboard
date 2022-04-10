@@ -7,13 +7,6 @@
     background-color: yellow;
 }
 
-.orangeBtn{
-    background-color:orange;
-}
-
-.violetBtn{
-    background-color: violet;
-}
 
 #historylist li:hover {
     font-weight: bold;
